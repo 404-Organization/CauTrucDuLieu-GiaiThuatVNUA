@@ -12,6 +12,7 @@ Ghi lại tệp sao cho tất cả sinh viên nữ ở đầu danh sách, tất 
 */
 #include<iostream>
 #include<stdio.h>
+#include<fstream>
 
 using namespace std;
 
@@ -38,9 +39,30 @@ int main()
     SinhVien Q[N];
     int F=-1,R=-1;
 
+    //Khai bao cau truc
+    SinhVien sv;
+
+    //Khai bao bien
+    int n;
+
+    //Khai bao tep
+    ifstream fin("danhsachsinhvien.txt");
+
     cout<<"Chuong trinh sap xep danh sach sinh vien theo gioi tinh su dung hang doi"<<endl;
 
+    //Doc du lieu tu tep
+    while(fin>>sv.maSV>>sv.hoTen>>sv.gioiTinh>>sv.diemTBC)
+    {
+        qInsert(Q,F,R,sv);
+    }
 
+    //Dua ra du lieu
+    cout<<"Danh sach sinh vien :"<<endl;
+    while(!isEmpty(Q,F,R))
+    {
+        sv=qDelete(Q,F,R);
+        cout<<sv.maSV<<" "<<sv.hoTen<<" "<<sv.gioiTinh<<" "<<sv.diemTBC<<endl;
+    }
 
 
     cout<<endl;
@@ -81,9 +103,11 @@ SinhVien qDelete(SinhVien *Q, int &F, int &R)
    //2. Luu phan tu loai bo
    SinhVien tg = Q[F];
 
+
+   
    //3. Tang F
-   if(F==-1)
-        F=R=0;
+   if(F==R)
+        F=R=-1;
     else if(F==N-1)
         F=0;
     else
