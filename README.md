@@ -1,5 +1,5 @@
 HƯỚNG DẪN COPY-PASTE
-B1: đăng nhập putty
+B1: đăng nhập putty\n
 B2: chọn 1 file muốn tìm (ví dụ: ctdlbai04.cpp)
 B3: gõ lệnh mcedit ctdlbai04.cpp
 B4: nhấn shift+insert
