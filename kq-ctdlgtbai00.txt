@@ -1,0 +1,3 @@
+3 canh cua tam giac la: a=3, b=4, c=5
+Chu vi tam giac la: P=12
+Dien tich tam giac la: S=6
