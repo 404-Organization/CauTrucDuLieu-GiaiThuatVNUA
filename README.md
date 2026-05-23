@@ -14,3 +14,6 @@
 > 💡 Lưu ý: Khi gõ sẽ không hiện chữ nào cả, gõ trong âm thầm. Nhớ gõ cả dấu `=` và chữ `G` hoa.
 
 **B8:** Giữ `Shift` và nhấn `:`, bỏ `Shift` ra, gõ thêm `wq` rồi nhấn `Enter`
+
+**Đóng góp ý kiến của bạn tại**
+> https://404feedback.vercel.app/
